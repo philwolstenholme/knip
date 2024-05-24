@@ -16,7 +16,7 @@ const config = ['.storybook/{main,test-runner}.{js,ts}'];
 
 const stories = ['**/*.@(mdx|stories.@(mdx|js|jsx|mjs|ts|tsx))'];
 
-const restEntry = ['.storybook/{manager,preview}.{js,jsx,ts,tsx}'];
+const restEntry = ['.storybook/{manager,preview}.{js,jsx,ts,tsx}', '!.storybook/__mocks__'];
 
 const entry = [...restEntry, ...stories];
 
